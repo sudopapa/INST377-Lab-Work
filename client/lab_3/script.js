@@ -24,7 +24,14 @@ function updateSlidePosition() {
   // and remove the 'visible' class from each classList
   // then add a class 'hidden' to all of them
 
-   slidesArray.forEach()
+  for(let slide of slides) {
+    slide.classList.remove('carousel_item--visible');
+    slide.classList.add('carousel_item--hidden');
+
+    slides[slidePosition].classList.add('carousel_item--visible');
+
+  }
+
 
   // outside your .forEach,
   // add a 'visible' class to the slide at the current slidePosition in slides
@@ -38,10 +45,16 @@ function moveToNextSlide() {
     if not, set the slidePosition to the current position plus one
   */
 
-  
+  if (slidePosition == totalSlides - 1) {
+    slidePosition = 0;
+  } else {
+    slidePosition++;
+  }
 
   updateSlidePosition(); // this is how you call a function within a function
+
 }
+
 function moveToPrevSlide() {
   // add your code in here for when you click the "prev" button
   /*
@@ -51,10 +64,14 @@ function moveToPrevSlide() {
     if not, set the slidePosition to the current position minus one
   */
 
-  
-
+  if (slidePosition == 0) {
+    slidePosition = 0;
+  } else {
+    slidePosition--;
+  } 
 
   updateSlidePosition();
+
 }
 
 /*
