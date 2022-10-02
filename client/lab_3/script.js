@@ -65,7 +65,7 @@ function moveToPrevSlide() {
   */
 
   if (slidePosition == 0) {
-    slidePosition = slidesArray.length;
+    slidePosition = totalSlides - 1;
   } else {
     slidePosition--;
   } 
