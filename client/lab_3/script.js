@@ -71,7 +71,8 @@ function moveToPrevSlide() {
   } else {
     slidePosition--;
   } 
-
+  
+  updateSlidePosition();
 }
 
 /*
