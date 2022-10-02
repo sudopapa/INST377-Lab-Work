@@ -239,7 +239,6 @@ div.carousel {
     - ... there's a reason crop tools are popular in image editors
    */
   width: 150px;
-  height: auto; 
 }
 
 .carousel_actions {
@@ -262,13 +261,11 @@ div.carousel {
 
 .carousel_actions button #carousel_button--next { 
   margin-left: 20px;
-
 }
 
 
 .carousel_actions button #carousel_button--next { 
   margin-right: 20px;
-
 }
 
 .prev,
