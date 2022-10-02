@@ -25,10 +25,10 @@ function updateSlidePosition() {
   // then add a class 'hidden' to all of them
 
   for(let slide of slides) {
-    slide.classList.remove('visible');
-    slide.classList.add('hidden');
+    slide.classList.remove('carousel_item--visible');
+    slide.classList.add('carousel_item--hidden');
 
-    slides[slidePosition].classList.add('visible');
+    slides[slidePosition].classList.add('carousel_item--visible');
 
   }
 
@@ -64,13 +64,13 @@ function moveToPrevSlide() {
     if not, set the slidePosition to the current position minus one
   */
 
+
+
   if (slidePosition == 0) {
     slidePosition = totalSlides - 1;
   } else {
     slidePosition--;
   } 
-
-  updateSlidePosition();
 
 }
 
