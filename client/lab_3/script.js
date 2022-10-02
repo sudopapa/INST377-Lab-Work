@@ -25,10 +25,10 @@ function updateSlidePosition() {
   // then add a class 'hidden' to all of them
 
   for(let slide of slides) {
-    slide.classList.remove('visible');
-    slide.classList.add('hidden');
+    slide.classList.remove('.visible');
+    slide.classList.add('.hidden');
 
-    slides[slidePosition].classList.add('visible');
+    slides[slidePosition].classList.add('.visible');
 
   }
 
