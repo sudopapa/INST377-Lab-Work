@@ -29,7 +29,7 @@ function updateSlidePosition() {
     slide.classList.add('.hidden');
   }
 
-  slides[slidePosition].classList.add('.visible');
+      slides[slidePosition].classList.add('.visible');
 
 
   // outside your .forEach,
@@ -44,7 +44,7 @@ function moveToNextSlide() {
     if not, set the slidePosition to the current position plus one
   */
 
-  if (slidePosition === totalSlides - 1) {
+  if (slidePosition == totalSlides - 1) {
     slidePosition = 0;
   } else {
     slidePosition++;
@@ -63,7 +63,7 @@ function moveToPrevSlide() {
     if not, set the slidePosition to the current position minus one
   */
 
-  if (slidePosition === 0) {
+  if (slidePosition == 0) {
     slidePosition = totalSlides - 1;
   } else {
     slidePosition--;
