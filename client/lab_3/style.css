@@ -196,7 +196,9 @@ form {
 }
 
 .carousel {
+  display: flex;
   overflow: hidden;
+  justify-content: center;
   max-width: 600px;
   position: relative;
 }
