@@ -18,6 +18,25 @@ const slidesArray = Array.from(slides);
 // Figure out how many slides we have available
 const totalSlides = slidesArray.length;
 
+/*
+  These two functions have been assigned via "addEventListener"
+  to the elements accessed by the "querySelector" set to the class name on each
+*/
+document.
+getElementById('carousel_button--.next') // Get the appropriate element (<button class="next">)
+  .addEventListener('click', () => { // set an event listener on it - when it's clicked, do this callback function
+    console.log('clicked next'); // let's tell the client console we made it to this point in the script
+    moveToNextSlide(); // call the function above to handle this
+  });
+
+document.
+getElementById('carousel_button--prev')
+  .addEventListener('click', () => {
+    console.log('clicked prev');
+    moveToPrevSlide();
+  });
+
+
 
 function updateSlidePosition() {
   // Using the .forEach array method, (array.forEach((element) => { per-element work goes here }))
@@ -72,20 +91,3 @@ function moveToPrevSlide() {
   updateSlidePosition();
 }
 
-/*
-  These two functions have been assigned via "addEventListener"
-  to the elements accessed by the "querySelector" set to the class name on each
-*/
-document.
-getElementByID('carousel_button--.next') // Get the appropriate element (<button class="next">)
-  .addEventListener('click', () => { // set an event listener on it - when it's clicked, do this callback function
-    console.log('clicked next'); // let's tell the client console we made it to this point in the script
-    moveToNextSlide(); // call the function above to handle this
-  });
-
-document.
-getElementByID('carousel_button--prev')
-  .addEventListener('click', () => {
-    console.log('clicked prev');
-    moveToPrevSlide();
-  });
