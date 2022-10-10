@@ -241,7 +241,7 @@ form {
 }
 
 .carousel .carousel_actions button {
-  border: 0;
+  border-width: 3px;
   font-weight: bold;
   cursor: pointer;
   width: 50px;
