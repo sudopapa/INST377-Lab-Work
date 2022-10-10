@@ -203,15 +203,6 @@ form {
   position: relative;
 }
 
-
-.carousel .slides {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-}
-
 .carousel .carousel_item
 
 /* .carousel_item, */
