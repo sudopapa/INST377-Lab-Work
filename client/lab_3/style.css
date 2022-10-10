@@ -218,11 +218,11 @@ div.carousel {
 }
 
 /* .carousel_item, */
-.hidden {
+.carousel .carousel_item--hidden {
   display: none;
 }
 
-.visible {
+.carousel .carousel_item--visible {
   display: block;
 }
 
@@ -237,7 +237,8 @@ div.carousel {
     - now make sure that images are _always_ square
     - ... there's a reason crop tools are popular in image editors
    */
-  width: 150px; 
+  width: 150px;
+  height: 150px; 
 }
 
 .carousel .carousel_actions {
@@ -258,6 +259,13 @@ div.carousel {
   height: 40px;
 }
 
+.carousel .carousel_actions button#carousel_button--prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel_actions button#carousel_button--next {
+  margin-right: 20px;
+}
 
 .prev,
 .next {

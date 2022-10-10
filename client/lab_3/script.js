@@ -7,16 +7,17 @@
 */
 /* eslint-enable max-len */
 // set our first slide's position to "0", the opening position in an array
-const slidePosition = 0;
+let slidePosition = 0;
 
 // gather a reference to every slide we're using via the class name and querySelectorAll
-const slides = document.querySelectorAll('.carousel_item');
+const slides = document.getElementsByClassName('.carousel_item');
 
 // change that "NodeList" into a Javascript "array", to get access to "array methods"
 const slidesArray = Array.from(slides);
 
 // Figure out how many slides we have available
 const totalSlides = slidesArray.length;
+
 
 function updateSlidePosition() {
   // Using the .forEach array method, (array.forEach((element) => { per-element work goes here }))
@@ -25,11 +26,11 @@ function updateSlidePosition() {
   // then add a class 'hidden' to all of them
 
   for(let slide of slides) {
-    slide.classList.remove('.visible');
-    slide.classList.add('.hidden');
+    slide.classList.remove('carousel_item--visible');
+    slide.classList.add('carousel_item--hidden');
   }
 
-      slides[slidePosition].classList.add('.visible');
+  slides[slidePosition].classList.add('carousel_item--visible');
 
 
   // outside your .forEach,
@@ -44,14 +45,13 @@ function moveToNextSlide() {
     if not, set the slidePosition to the current position plus one
   */
 
-  if (slidePosition == totalSlides - 1) {
+  if (slidePosition === totalSlides - 1) {
     slidePosition = 0;
   } else {
     slidePosition++;
   }
 
   updateSlidePosition(); // this is how you call a function within a function
-
 }
 
 function moveToPrevSlide() {
@@ -63,7 +63,7 @@ function moveToPrevSlide() {
     if not, set the slidePosition to the current position minus one
   */
 
-  if (slidePosition == 0) {
+  if (slidePosition === 0) {
     slidePosition = totalSlides - 1;
   } else {
     slidePosition--;
@@ -76,13 +76,15 @@ function moveToPrevSlide() {
   These two functions have been assigned via "addEventListener"
   to the elements accessed by the "querySelector" set to the class name on each
 */
-document.querySelector('.next') // Get the appropriate element (<button class="next">)
+document.
+getElementByID('carousel_button--.next') // Get the appropriate element (<button class="next">)
   .addEventListener('click', () => { // set an event listener on it - when it's clicked, do this callback function
     console.log('clicked next'); // let's tell the client console we made it to this point in the script
     moveToNextSlide(); // call the function above to handle this
   });
 
-document.querySelector('.prev')
+document.
+getElementByID('carousel_button--prev')
   .addEventListener('click', () => {
     console.log('clicked prev');
     moveToPrevSlide();
