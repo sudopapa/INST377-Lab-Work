@@ -226,8 +226,9 @@ form {
     - now make sure that images are _always_ square
     - ... there's a reason crop tools are popular in image editors
    */
-  width: 150px;
-  height: 150px; 
+   width: 100%;
+   max-width: 600px;
+   height: auto;
 }
 
 .carousel .carousel_actions {
