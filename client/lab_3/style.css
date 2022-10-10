@@ -226,6 +226,7 @@ form {
 
   width: 150px;
   height: auto;
+  justify-content: center;
 }
 
 .carousel .carousel_actions {
