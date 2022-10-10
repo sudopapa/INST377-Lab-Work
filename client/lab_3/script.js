@@ -16,7 +16,7 @@ const slides = document.getElementsByClassName('.carousel_item');
 const slidesArray = Array.from(slides);
 
 // Figure out how many slides we have available
-const totalSlides = slidesArray.length;
+const totalSlides = slides.length;
 
 /*
   These two functions have been assigned via "addEventListener"
