@@ -202,8 +202,14 @@ form {
 }
 
 .carousel .carousel_item,
+
 .carousel .carousel_item--hidden {
   display: none;
+}
+
+.carousel .carousel_item--visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
 }
 
 .carousel .carousel_item img {
@@ -220,11 +226,6 @@ form {
 
   width: 150px;
   height: auto;
-}
-
-.carousel .carousel_item--visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
 }
 
 .carousel .carousel_actions {
