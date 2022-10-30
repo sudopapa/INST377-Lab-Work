@@ -9,7 +9,7 @@
 */
 
 html {
-  background-color: #fff;
+  background-color: rgb(13, 29, 34);
   font-size: 16px;
   min-width: 300px;
   overflow-x: hidden;
@@ -31,7 +31,7 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: rgb(239, 239, 239);
+  background-color: rgb(13, 29, 34);
 }
 
 
@@ -128,14 +128,14 @@ form {
 }
 
 .left_section {
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(60, 135, 165, 0.8);
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(255, 224, 138, 0.7);
+  background-color: rgba(52, 124, 64, 0.7);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -151,13 +151,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(0, 139, 139, 0.8);
+  background-color: rgba(60, 135, 165, 0.8);
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgba(255, 224, 138, 1);
+  color: rgb(130, 213, 219);
   text-decoration: underline;
 }
 
@@ -170,7 +170,7 @@ form {
   /* Hue, saturation, luminosity, alpha */
   background-color: hsla(0, 0%, 90%, 0.15);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
+  color: rgb(77, 147, 165);
   text-decoration: none;
 }
 
