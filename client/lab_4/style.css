@@ -235,7 +235,7 @@ form input {
     /* Rules in here will only apply when a screen is the correct size */
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
-      background-color: rgba(255, 118, 225, 0.65);
+      background-color: rgba(240, 74, 157, 0.65);
       flex-direction: column;
       justify-content: center;
       align-items: center;
