@@ -135,7 +135,7 @@ form {
 }
 
 .right_section {
-  background-color: rgba(0, 106, 114, 0.7);
+  background-color: rgba(56, 219, 157, 0.8);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -157,7 +157,7 @@ form {
 }
 
 .footer a {
-  color: rgb(107, 216, 243);
+  color: rgb(10, 58, 66);
   text-decoration: underline;
 }
 
