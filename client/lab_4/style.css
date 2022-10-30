@@ -155,7 +155,7 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: #4ea3c5;
+  background-color: rgb(78, 164, 198);
   font-size: 1.2rem;
   font-weight: 600;
 }
@@ -172,7 +172,7 @@ form {
 */
 .footer a:hover {
   /* Hue, saturation, luminosity, alpha */
-  background-color: hsla(39, 100%, 46%, 0.15);
+  background-color: rgba(235, 152, 0, 0.15);
   /* red, green, blue, alpha */
   color: rgb(0, 250, 83);
   text-decoration: none;
@@ -236,5 +236,8 @@ form input {
     /* check it out by using your developer tools to shrink your screen-size */
     .container {
       background-color: rgba(255, 118, 225, 0.65);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 }
