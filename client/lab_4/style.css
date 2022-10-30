@@ -93,8 +93,8 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #ffe08a;
-  color: #4a4a4a;
+  background-color: #4ea3c5;
+  color: #141414;
 
   /* shapes */
   border-radius: 6px;
@@ -117,7 +117,7 @@ form {
 */
 
 .box {
-  background-color: rgba(248, 27, 11, 0.4);
+  background-color: rgba(155, 155, 155, 0.4);
   border: 2px dashed;
   border-radius: 4px;
 
@@ -128,14 +128,14 @@ form {
 }
 
 .left_section {
-  background-color: rgba(243, 243, 243, 0.8);
+  background-color: rgba(56, 219, 157, 0.8);
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: rgba(0, 114, 19, 0.7);
+  background-color: rgba(0, 106, 114, 0.7);
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -151,13 +151,13 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: rgba(253, 15, 233, 0.8);
+  background-color: #4ea3c5;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .footer a {
-  color: rgb(243, 227, 3);
+  color: rgb(107, 216, 243);
   text-decoration: underline;
 }
 
@@ -175,7 +175,7 @@ form {
 }
 
 .subtitle {
-  color: rgba(92, 6, 204, 0.8);
+  color: rgba(37, 37, 37, 0.8);
   margin: 0px;
   margin-bottom: 5px;
 }
