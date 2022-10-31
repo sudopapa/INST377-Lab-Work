@@ -203,68 +203,6 @@ form {
   height: 150px;
 }
 
-.carousel {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  max-width: 600px;
-  position: relative;
-}
-
-.carousel .carousel_item,
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-  animation: fadeVisibility 0.5s;
-}
-
-.carousel_item img {
-  /* 
-    Setting width, rather than max-width or min-width,
-    means annoying pop-ins won't happen
-    but it also means you need to format your images to be compatible
-    or they will stretch weird
-    - try a tall one and see what happens
-    - change the height on a fixed image size and see what happens
-    - now make sure that images are _always_ square
-    - ... there's a reason crop tools are popular in image editors
-   */
-
-  width: 150px;
-  height: 150px;
-  justify-content: center;
-}
-
-.carousel .carousel_actions {
-  display: flex;
-  width: 85%;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel .carousel_actions button {
-  border-width: 2px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  width: 50px;
-  height: 40px;
-}
-
-.carousel .carousel_actions button#carousel_button--prev {
-  margin-left: 20px;
-}
-
-.carousel .carousel_actions button#carousel_button--next {
-  margin-right: 20px;
-}
-
 /*
 Form Styles
 */
@@ -293,7 +231,7 @@ form input {
     margin-bottom: 0.5rem;
   }
 
-
+  
 
 /* 
     New code bonus: pure CSS data loading icon
