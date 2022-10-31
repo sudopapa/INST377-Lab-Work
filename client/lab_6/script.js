@@ -29,7 +29,7 @@ function injectHTML(list) {
     el.innerText = item.name;
     listEl.appendChild(el);
     
-  })
+  });
 
 
   /*
