@@ -98,9 +98,28 @@ function getRandomIntInclusive(min, max) {
       const lowerCaseQuery = filterInputValue.toLowerCase();
       return lowerCaseName.includes(lowerCaseQuery);
     })
-    return newArray;
   }
   
+  function initMap() {
+    console.log('initMap');
+    const map = L.map('map').setView([38.989697, -76.937759], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    return map;
+  }
+
+  function markerPlace(array, map) {
+    console.log('markerPlace', array);
+    // const marker = L.marker([51.5, -0.09]).addTo(map);
+    array.forEach(item => {
+        const {coordinates} = item.geocoded_column_1;
+        L.marker([coordinates[1], coordinates[0]]).addTo(map);
+
+    });
+  }
+
   async function mainEvent() {
     /*
       ## Main Event
@@ -109,6 +128,8 @@ function getRandomIntInclusive(min, max) {
         If you separate your work, when one piece is complete, you can save it and trust it
     */
   
+    const pageMap = initMap();
+
     // the async keyword means we can make API requests
     const form = document.querySelector('.main_form'); // get your main form so you can do JS with it
     const submit = document.querySelector('#get-resto'); // get a reference to your submit button
@@ -155,6 +176,7 @@ function getRandomIntInclusive(min, max) {
         console.log('input', event.target.value);
         const filteredList = filterList(currentList, event.target.value);
         injectHTML(filteredList);
+        markerPlace(currentList, pageMap);
       });
 
       // And here's an eventListener! It's listening for a "submit" button specifically being clicked
@@ -169,6 +191,7 @@ function getRandomIntInclusive(min, max) {
   
         // And this function call will perform the "side effect" of injecting the HTML list for you
         injectHTML(currentList);
+        markerPlace(currentList, pageMap);
   
         // By separating the functions, we open the possibility of regenerating the list
         // without having to retrieve fresh data every time

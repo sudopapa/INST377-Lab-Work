@@ -5,7 +5,15 @@
 <head>
     <meta charset="utf-8">
     <title>Matthew Papa's Labs for INST377</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
 
 </head>
     <body>
@@ -30,7 +38,7 @@
 
                 <div class="box right_section">
                     <h2>Local Restaurant Map</h2>
-
+                    <div id="map"></div>
                     <div class="box" id="restaurant_list">
                         A list of restaurants from an API
                     </div>
